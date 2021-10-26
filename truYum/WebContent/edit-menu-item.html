@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style\style.css">
+<script type="text/javascript" src="js\script.js"></script>
+</head>
+<div id="border">
+	<article>
+		<header>
+			<p id="head">truYum</p>
+			<img src="images\truyum-logo-light.png" height="50" width="50">
+			<a id="menu" href="menu-item-list-admin.html"> Menu </a>
+		</header>
+	</article>
+	<body>
+		<p id="edit-menu-item">Edit Menu Item</p>
+		<form name="editmenuform" action="edit-menu-item-status.html"
+			onsubmit="return validate()" method="post">
+			<table>
+				<tr>
+					<td class="editcolor"><b> Name</b></td>
+				</tr>
+				<tr>
+					<td colspan="4"><label for="Name"></label> <input id="Name"
+						name="title" type="text" size="80"></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="editcolor"><b> Price (Rs.)</b></td>
+					<td class="editcolor"><b> Active</b></td>
+					<td class="editcolor"><b> Date of Launch</b></td>
+					<td class="editcolor"><b> Category</b></td>
+				</tr>
+				<tr>
+					<td><label for="Price"></label> <input id="Price"
+						name="price" type="text"></td>
+					<td><label for="Active"></label> <input id="Active"
+						name="inStock" type="radio" value="Yes" checked>Yes <input
+						id="Active" name="inStock" type="radio" value="No">No</td>
+					<td><label for="Date Of Launch"></label> <input
+						id="Date Of Launch" name="dateOfLaunch" type="date"></td>
+					<td><label for="Category"></label> <select id="Category"
+						name="category">
+							<option value="">Select</option>
+							<option value="Starters">Starters</option>
+							<option value="Main Course">Main Course</option>
+							<option value="Dessert">Dessert</option>
+							<option value="Drinks">Drinks</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="editcolor"><label for="FreeDelivery"></label> <input
+						id="FreeDelivery" name="freeDelivery" type="checkbox" checked><b>
+							Free Delivery </b></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td><label for="submit"></label> <input id="submit"
+						type="submit" name="submit" value="save"></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+	<footer>
+		<p>Copyright &#169 2019</p>
+	</footer>
+</div>
+</html>
